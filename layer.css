@@ -1,0 +1,131 @@
+@charset "utf-8";
+header {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+}
+
+/************ gnb *********************/
+.skipnav {position: fixed;width: 100%;background: #000;color: #fff;text-align: center;z-index: 3}
+.skipnav a {display: block;color: #fff;font-weight: bold;width: 0;height: 0;line-height: 0;font-size: 0}
+.skipnav a:focus, .skip a:active {display: block;padding: 5px 0;width: auto;height: auto;line-height: 1.5;font-size: 14px}
+#seoul-common-gnb {height:48px;background-color: #0c82e9}
+
+header {position: fixed;border-bottom: 1px solid rgba(255, 255, 255, 0.19);width: 100%;z-index: 3;top:0}
+header.bron {background-color: #191919}
+header.action {background: rgb(36,80,148);background: linear-gradient(138deg, rgb(36, 80, 148) 0%, rgba(194,33,98,1) 100%, rgb(87, 87, 244) 245094%);border-bottom:0}
+header:after {content: '';clear: both;display: block}
+header .navi {margin: 0 auto;position: relative}
+header > .navi > h1 {position: absolute;left: 0;top: 16px}
+header > .navi > h1 > a {background: url(../images/common/logo.png) no-repeat;display: block;text-indent: -999em;width: 185px;height: 27px;margin-left:15px}
+header > .navi > .m_menu {position: absolute;right: 8px;top: 11px;z-index: 4;color: #fff;display: block;background: url(../images/common/pc_menu.png) no-repeat center;text-indent: -999em;width: 39px;height: 39px;border: 1px solid #eaeaea;display:none}
+nav {z-index: 2}
+nav:after {content: '';clear: both;display: block}
+nav.search-tab:after {content:none}
+nav > ul {display: table;margin: 0 auto;position: relative;text-align: center}
+nav > ul:after {content:'';display:block;clear: both}
+nav > ul > li {float: left;position: relative}
+nav > ul > li > a {display: block;line-height: 22px;text-align: center;position: relative;font-weight: 600;font-size: 18px;padding: 19px 33px;color: #fff}
+nav > ul > li > a:hover, nav > ul > li > a:focus, nav > ul > li > a:active {color:#78f8ff}
+nav > ul > li > ul {position: absolute;width: 100%;display: none;padding: 10px 0;z-index: 3;top: 59px}
+nav > ul > li > ul > li > ul > li > a {color: rgba(255, 255, 255, 0.64);font-size: 14px;background-color: #404040;display: block;padding: 9px}
+nav > ul > li > ul > li > a {color: #fff;display: block;padding: 10px 10px;font-size: 14px}
+nav > ul > li > ul > li a:hover, nav > ul > li > ul > li a:focus {color: #78f8ff}
+nav > ul > .slider {width: 20%;height: 2px;position: absolute;left: 0;bottom: 0;background-color: #6dc4ff;transition: all .5s;opacity:0}
+nav > ul > li > ul > li > ul {display:none}
+nav > ul > li > a.on {color: #78f8ff}
+.navi .utility {position: absolute;right: 15px;top: 0;display: table;z-index: 4}
+.navi .utility li {display: table-cell;}
+.navi .utility li a {width: 16px;height: 18px;display: inline-block;text-indent: -999em;background: url(../images/common/utility.png);margin: 21px 9px}
+.navi .utility li .menber_icon {background-position: center 0}
+.navi .utility li .search_icon {background-position: right 0}
+.sub_visual {background-position: center top;background-repeat: no-repeat;position: relative;background-size: cover;}
+.menu_bg {width: 100%;height: 0;position: absolute;top: 59px;display: none;left: 0;z-index: 3;background-color: #191919}
+.visual img {max-width: 100%;margin: 0 auto;width: 100%}
+.v_m {display:none}
+#sub01, #sub02, #sub03, #sub04, #sub05 {display:none}
+
+footer {background-color: #313137;color: #fff;font-size: 14px;font-weight: 200}
+.footer_wrap {max-width:1230px;margin:0 auto;padding: 35px 15px;position: relative}
+.f_link > .link_wrap {float: left}
+.f_link > .link_wrap li {float:left}
+.f_link > .link_wrap li a {display: inline-block;padding-right: 24px;line-height: 22px;margin-bottom: 9px}
+.f_link > .link_wrap li a:hover, .f_link .link_wrap li a:hover focus, .Family_site h3 a:hover, .Family_site h3 a:focus {color: #ffe631}
+address {letter-spacing: -0.2px;color: rgb(202, 202, 202);clear: both;padding-top: 14px}
+address p {letter-spacing: 1px}
+.sns_wrap {float: right;margin-top: -36px}
+.sns_wrap li {display: table-cell}
+.sns_wrap li a {display:inline-block;width:36px;height:36px;background:url(../images/common/sns.png) no-repeat;text-indent: -999em;margin-left:5px}
+.sns_wrap li a.blog {background-position: -37px 0;}
+.sns_wrap li a.instagram {background-position: -74px 0;}
+.sns_wrap li a.youtube {background-position: -111px 0;}
+.sns_wrap li a.twitter {background-position: -148px 0;}
+
+/**패밀리사이트**/
+.f_logo02 {float: right}
+.Family_site {width: 250px;position: relative;}
+.Family_site h3 {text-align: left}
+.Family_site h3 a {border: 1px solid rgba(255, 255, 255, 0.26);padding: 7px 15px;display: block;background: url(../images/common/Family_open.png) no-repeat right}
+.Family_site ul {position: absolute;bottom: 0px;background-color: #3e3f48;width: 100%;border: 1px solid rgba(255, 255, 255, 0.25);padding: 5px 0;display:none;height: 214px;overflow-y: auto;text-align: left}
+.Family_site ul li {width: 100%}
+.Family_site ul li em {display: block;padding: 8px 15px;font-weight: 500;font-size: 16px;border-bottom: 1px solid rgba(255, 255, 255, 0.23)}
+.Family_site ul li > a {display: block;padding: 5px 16px}
+.Family_site .family_close {background: url(../images/common/family_close.png) no-repeat;position: absolute;top: 13px;right: 0;text-indent: -999em;width: 17px;height: 17px}
+
+
+@media screen and (max-width: 1200px) {
+	.utility {right:1.5%}
+	header > .navi > h1 {position: relative;background-color: #fff;padding: 18px 0;width: 100%;z-index: 4;top:0}
+	header > .navi > h1 > a {background: url('../images/common/logo_.png') no-repeat}
+	header > h1 {background-color: #01385d;padding: 6px 3% 7px;position: relative;width: 100%;z-index: 4}
+	header > .navi > .m_menu {background: url(../images/common/menu.png) no-repeat center;display: block}
+	header > .navi > .m_menu.off {background: url('../images/common/close.png') no-repeat center;right: 9px}
+	nav {display: none;background-color: #191919;top: 60px;margin-left: 0;position: absolute;width: 100%}
+	nav.search-tab {display:table;position: relative;background: none;top: auto}
+	nav.menu-fixed {top: 68px;background-color: #093654}
+	nav > ul {margin-left: 0;float: none}
+	nav > ul > li > a.new:after  {left: 110px}
+	nav > ul {display:block}
+	nav > ul > li {float:none;width:100%}
+	nav > ul > .slider {display:none}
+	nav > ul > li > a {line-height: 40px;display:block;padding-left: 28px;text-align:left;color: #fff}
+	nav > ul > li > a:hover {color:#78f8ff}
+	nav > ul > li.active > a {background-color: #333}
+	nav > ul > li.depth_add > a {display:block;border-bottom: 1px solid rgba(255, 255, 255, 0.1);background: url('../images/common/up_down.png') no-repeat right 13px;font-weight: 300;font-size: 14px}
+	nav > ul > li.depth_add.active > a {background-color: #333;background-position: right -23px}
+	nav.menu-fixed > ul > li > ul {top:0}
+	nav.menu-fixed > ul > li > a {line-height: 22px}
+	nav > ul > li > ul {position:relative;border:0;padding:0;top: 0px}
+	nav > ul > li:last-child > ul {position:relative;top:0;border:0}
+	nav > ul > li > ul > li > a {padding-left: 40px;border-bottom: 1px solid rgba(255, 255, 255, 0.1);text-align: left}
+	nav > ul > li > ul > li > ul > li > a {padding: 9px 0 9px 55px;text-align: left}
+	nav > ul > li > ul > li.depth_add > a {display: block;background: url('../images/common/up_down.png') no-repeat right 13px}
+	nav > ul > li > ul > li.depth_add.active > a {background-color: #333;background-position: right -23px}
+	nav > ul > li > ul > li > ul {display:block}
+	nav > ul > li > a {height:auto;padding:10px;line-height: 22px}
+	nav > ul > li > a.on{color: #fff}
+	nav > ul > li > a.new:after {left:68px;top:10px}
+	.navi .utility {right: 54px}
+	.navi .utility li a {background: url(../images/common/utility_m.png)}
+	.sub_visual {background-size: cover}
+	.footer_wrap {padding: 35px 15px}
+	.f_link {padding: 0;margin: 0 auto;display: table;text-align: center;width: 100%}
+	.f_link > .link_wrap {display: table;margin: 0 auto;float: none}
+	.f_link > .link_wrap li a {padding:13px 15px}
+	.f_sns {position: relative;clear: both;text-align: center;top: 0px}
+	address p {margin-bottom:20px}
+	.f_logo02 {float: none;clear: both;display: table;margin: 0 auto 10px}
+	.sns_wrap {float: none;display: table;margin: 0 auto}
+}
+
+@media print {
+	header {display:none}
+	footer {display:none}
+	img {max-width: 100% !important}
+}
+
+@media print and (color) {
+   * {-webkit-print-color-adjust: exact;print-color-adjust: exact}
+}
