@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<title>z5 webtong css template</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="./css/base.css" type="text/css" />							<!--기본 css-->
+<link rel="stylesheet" href="./css/font.css" type="text/css" />							<!--폰트 css-->
+<link rel="stylesheet" href="./css/layer.css" type="text/css" />						<!--기본레이아웃 css-->
+<link rel="stylesheet" href="./css/style.css" type="text/css" />						<!--메인 및 서브 내용 css-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>						<!--기본 제이쿼리-->
+<script src="http://temp20.zsol.co.kr/template_visual/js/jquery.bxslider.js"></script>	<!--비주얼 슬라이드 제이쿼리-->
+<script src="./js/jquery.scrollbar.min.js"></script>									<!--스크롤 디자인변경 제이쿼리-->
+<!--[if lt IE 10]>
+<link rel="stylesheet" href="./css/ie.css">
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="./js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<!--Skip menu[E]-->
+<div class="skipnav">
+	<a href="#contents">본문 바로가기</a>
+	<a href="#header">메뉴바로가기</a>
+</div>
+<!--Skip menu[E]-->
+<!--GNB[S]-->
+<header id="header">
+	<div class="navi">
+		<div class="menu_bg"></div>
+		<h1><a href="index.html">모입조</a></h1>
+		<a class="m_menu" href="#none">모바일메뉴</a>
+		<nav>
+			<ul>
+				<li class="depth_add">
+					<a class="menu01" href="sub01.html">COMPANY</a>
+					<ul class="height">
+						<li><a href="sub01.html">인사말</a></li>
+						<li><a href="#none">비전</a></li>
+						<li><a href="#none">소개</a></li>
+						<li><a href="#none">게시판</a></li>
+					</ul>
+				</li>
+				<li class="depth_add">
+					<a class="menu02" href="sub02.html">PRODUCT</a>
+					<ul>
+						<li><a href="sub02.html">추천의상</a></li>
+						<li class="depth_add"><a href="#none">의류검색</a>
+							<ul>
+								<li><a href="#none">코트</a></li>
+								<li><a href="#none">외투</a></li>
+							</ul>
+						</li>
+						<li class="depth_add"><a href="#none">검색서비스</a>
+							<ul>
+								<li><a href="#none">상의</a></li>
+								<li><a href="#none">하의</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="depth_add">
+					<a class="menu03" href="sub03.html">CUSTOMER</a>
+					<ul>
+						<li><a href="sub03.html">고객의소리</a></li>
+						<li><a href="#none">커뮤니티게시판</a></li>
+					</ul>
+				</li>
+				<li class="depth_add">
+					<a class="menu04" href="sub04.html">PR CENTER</a>
+					<ul>
+						<li><a href="sub04.html">코디북</a></li>
+						<li><a href="#none">내맘데로 코디</a></li>
+					</ul>
+				</li>
+				<li class="depth_add">
+					<a class="menu05" href="sub05.html">COMMUNITY</a>
+					<ul>
+						<li><a href="sub05.html">공지사항</a></li>
+						<li class="depth_add"><a href="#none">질문과답변</a>
+							<ul>
+								<li><a href="#none">게시판문의</a></li>
+								<li><a href="#none">모입조Project</a></li>
+							</ul>
+						</li>
+						<li><a href="#none">자유게시판</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<ul class="utility">
+			<li><a href="/login.html">로그인</a></li>
+			<li><a class="menber_icon" href="/signup.html">회원가입</a></li>
+			<li><a class="search_icon" href="/signup.html">회원가입</a></li>
+		</ul>
+	</div>
+</header>
+<!--GNB[E]------------------------------------------------------------------------------------------------------------------->
+
+<!--[S]서브 페이지 include 부분 입니다. 서버에 등록 시 include처리로 하나로 관리할 수 있도록 처리되었습니다.-->
+<div class="sub_visual" id="subbg">
+	<div class="sub_title fadeInUp">
+		<h2></h2><!--include를 고려하여 제작되었습니다. 하단 스크립트에서 텍스트로 관리됩니다.-->
+		<p></p><!--include를 고려하여 제작되었습니다. 하단 스크립트에서 텍스트로 관리됩니다.-->
+	</div>
+	<div class="sub_nav">
+		<div class="sub_nav_wrap clearfix">
+			<a class="home" href="#none">홈</a>
+			<div>
+				<ul class="sub_menu01">
+					<li><a href="#none">1차분류</a>
+						<ul class="clearfix">
+							<li><a href="sub01.html">COMPANY</a></li>
+							<li><a href="sub02.html">PRODUCT</a></li>
+							<li><a href="sub03.html">CUSTOMER</a></li>
+							<li><a href="sub04.html">PR CENTER</a></li>
+							<li><a href="sub05.html">COMMUNITY</a></li>
+							<li><a href="sub06.html">SHOPPING</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="sub01" class="sub_menu02">
+					<li><a href="sub01.html" aria-label="메뉴 열기"></a>
+						<ul>
+							<li><a href="#none">인사말</a></li>
+							<li><a href="#none">소개</a></li>
+							<li><a href="#none">코디북</a></li>
+							<li><a href="#none">게시판</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="sub02" class="sub_menu02">
+					<li><a href="sub02.html" aria-label="메뉴 열기"></a>
+						<ul>
+							<li><a href="#none">옷종류</a></li>
+							<li><a href="#none">옷검색</a></li>
+							<li><a href="#none">코디북서비스</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="sub03" class="sub_menu02">
+					<li><a href="sub03.html" aria-label="메뉴 열기"></a>
+						<ul>
+							<li><a href="#none">고객의소리</a></li>
+							<li><a href="#none">게시판문의</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="sub04" class="sub_menu02">
+					<li><a href="sub04.html" aria-label="메뉴 열기"></a>
+						<ul>
+							<li><a href="#none">의상종류</a></li>
+							<li><a href="#none">현재날씨</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="sub05" class="sub_menu02">
+					<li><a href="sub05.html" aria-label="메뉴 열기"></a>
+						<ul>
+							<li><a href="#none">공지사항</a></li>
+							<li><a href="#none">질문과답변</a></li>
+							<li><a href="#none">자유게시판</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<hr class="hr_none">
+</div>
+<!--[E]서브 페이지 include 부분 입니다. 서버에 등록 시 include처리로 하나로 관리할 수 있도록 처리되었습니다.-->
+<div class="sub_contents_wrap">
+	<!--[S]서브 내용시작-->
+	<!--[S]하나로 관리되는 서브메뉴를 제어하기 위한 스크립트부분-->
+	<script>
+	$(function() {
+		$(".menu01").addClass("on");	//상단메뉴
+		$("#sub01").css("display","block");	//서브 메뉴는 include 처리를 위해 하나로 관리되며, script 처리로 제목 및 해당 서브를 호출합니다.
+		$("#subbg").css("background-image","url(./images/sub/sub_background_01.png)"); //서브 비주얼 백그라운드변경
+		$(".sub_title h2").text('COMPANY');	//비주얼 영역 타이틀
+		$(".sub_title p").text('본 템플릿은 include를 이용하여 서브 메뉴를 하나로 관리할 수 있도록 제작되었습니다.');	//비주얼 영역 텍스트
+		$(".sub_menu01 > li > a").text('COMPANY');	//서브 1차메뉴 텍스트 제목
+		$(".sub_menu02 > li > a").text('인사말');	//서브 2차메뉴 텍스트 제목
+	});
+	</script>
+	<!--[E]하나로 관리되는 서브메뉴를 제어하기 위한 스크립트부분-->
+	<div id="contents" class="contents">
+		<h3>PNG 픽셀 기본형과 흰색 아이콘이 44개 포함되어 있습니다.</h3>
+		<ul class="icon_wrap clearfix">
+			<li><p><img src="./images/sub/icon01.png" alt="icon01" /></p></li>
+			<li><p><img src="./images/sub/icon02.png" alt="icon02" /></p></li>
+			<li><p><img src="./images/sub/icon03.png" alt="icon03" /></p></li>
+			<li><p><img src="./images/sub/icon04.png" alt="icon04" /></p></li>
+			<li><p><img src="./images/sub/icon05.png" alt="icon05" /></p></li>
+			<li><p><img src="./images/sub/icon06.png" alt="icon06" /></p></li>
+			<li><p><img src="./images/sub/icon07.png" alt="icon07" /></p></li>
+			<li><p><img src="./images/sub/icon08.png" alt="icon08" /></p></li>
+			<li><p><img src="./images/sub/icon09.png" alt="icon09" /></p></li>
+			<li><p><img src="./images/sub/icon10.png" alt="icon10" /></p></li>
+			<li><p><img src="./images/sub/icon11.png" alt="icon11" /></p></li>
+			<li><p><img src="./images/sub/icon12.png" alt="icon12" /></p></li>
+			<li><p><img src="./images/sub/icon13.png" alt="icon13" /></p></li>
+			<li><p><img src="./images/sub/icon14.png" alt="icon14" /></p></li>
+			<li><p><img src="./images/sub/icon15.png" alt="icon15" /></p></li>
+			<li><p><img src="./images/sub/icon16.png" alt="icon16" /></p></li>
+			<li><p><img src="./images/sub/icon17.png" alt="icon17" /></p></li>
+			<li><p><img src="./images/sub/icon18.png" alt="icon18" /></p></li>
+			<li><p><img src="./images/sub/icon19.png" alt="icon19" /></p></li>
+			<li><p><img src="./images/sub/icon20.png" alt="icon20" /></p></li>
+			<li><p><img src="./images/sub/icon21.png" alt="icon21" /></p></li>
+			<li><p><img src="./images/sub/icon22.png" alt="icon22" /></p></li>
+		</ul>
+		<ul class="icon_wrap bgcolor clearfix mb30">
+			<li><p><img src="./images/sub/icon01_f.png" alt="icon01" /></p></li>
+			<li><p><img src="./images/sub/icon02_f.png" alt="icon02" /></p></li>
+			<li><p><img src="./images/sub/icon03_f.png" alt="icon03" /></p></li>
+			<li><p><img src="./images/sub/icon04_f.png" alt="icon04" /></p></li>
+			<li><p><img src="./images/sub/icon05_f.png" alt="icon05" /></p></li>
+			<li><p><img src="./images/sub/icon06_f.png" alt="icon06" /></p></li>
+			<li><p><img src="./images/sub/icon07_f.png" alt="icon07" /></p></li>
+			<li><p><img src="./images/sub/icon08_f.png" alt="icon08" /></p></li>
+			<li><p><img src="./images/sub/icon09_f.png" alt="icon09" /></p></li>
+			<li><p><img src="./images/sub/icon10_f.png" alt="icon10" /></p></li>
+			<li><p><img src="./images/sub/icon11_f.png" alt="icon11" /></p></li>
+			<li><p><img src="./images/sub/icon12_f.png" alt="icon12" /></p></li>
+			<li><p><img src="./images/sub/icon13_f.png" alt="icon13" /></p></li>
+			<li><p><img src="./images/sub/icon14_f.png" alt="icon14" /></p></li>
+			<li><p><img src="./images/sub/icon15_f.png" alt="icon15" /></p></li>
+			<li><p><img src="./images/sub/icon16_f.png" alt="icon16" /></p></li>
+			<li><p><img src="./images/sub/icon17_f.png" alt="icon17" /></p></li>
+			<li><p><img src="./images/sub/icon18_f.png" alt="icon18" /></p></li>
+			<li><p><img src="./images/sub/icon19_f.png" alt="icon19" /></p></li>
+			<li><p><img src="./images/sub/icon20_f.png" alt="icon20" /></p></li>
+			<li><p><img src="./images/sub/icon21_f.png" alt="icon21" /></p></li>
+			<li><p><img src="./images/sub/icon22_f.png" alt="icon22" /></p></li>
+		</ul>
+		<h3>메인 및 서브 공통영역 - 상단 메뉴는 서버 등록 시 중복으로 사용되는 영역입니다.</h3>
+		<p class="text_basic">index.html 및 각 서브 페이지에 적용해 두었습니다. 서버 등록 시 include로 처리합니다. <striong class="color_red">&lt;? include "$DOCUMENT_ROOT/inc/gnb.htm"; ?&gt;</striong></p>
+		
+		
+		<h3>메인 및 서브 공통영역 - 하단 footer 영역은 서버 등록 시 중복으로 사용되는 영역입니다.</h3>
+		<p class="text_basic">index.html 및 각 서브 페이지에 적용해 두었습니다. 서버 등록 시 include로 처리합니다. <striong class="color_red">&lt;? include "$DOCUMENT_ROOT/inc/footer.htm"; ?&gt;</striong></p>
+		
+		
+		<h3>서브 공통영역 - 서브페이지 lnb 영역은 서버 등록 시 중복으로 사용되는 영역입니다.</h3>
+		<p class="text_basic">각 서브 페이지에 적용해 두었습니다. 서버 등록 시 include로 처리합니다. <striong class="color_red">&lt;? include "$DOCUMENT_ROOT/inc/lnb.htm"; ?&gt;</striong></p>
+		
+		
+		<h3>서브 공통영역 - 서브페이지 오른쪽 퀵메뉴 영역은 서버 등록 시 중복으로 사용되는 영역입니다.</h3>
+		<p class="text_basic">각 서브 페이지에 적용해 두었습니다. 서버 등록 시 include로 처리합니다. <striong class="color_red">&lt;? include "$DOCUMENT_ROOT/inc/quick_menu.htm"; ?&gt;</striong></p>
+		
+		
+		<h3>서브 공통영역 - 서버에 등록하여 include 처리 시 서브 제목 및 각 lnb 영역은 스크립트로 호출합니다.</h3>
+		<p class="text_basic">include 처리 시 각 서브 페이지 제목 및 서브 메뉴는 스크립트로 처리되었습니다.<br />
+			COMPANY 메뉴 - 스크립트 부분에 $("#sub01").css("display","block");<br />
+			PRODUCT 메뉴 - 스크립트 부분에 $("#sub02").css("display","block");<br />
+			CUSTOMER 메뉴 - 스크립트 부분에 $("#sub03").css("display","block");<br />
+			PR CENTER 메뉴 - 스크립트 부분에 $("#sub04").css("display","block");<br />
+			COMMUNITY 메뉴 - 스크립트 부분에 $("#sub05").css("display","block");<br />
+			SHOPPING 메뉴 - 스크립트 부분에 $("#sub06").css("display","block");
+		</p>
+		
+		<h3>템플릿에 사용된 스크립트</h3>
+		<p class="text_basic">모든 스크립트는 common.js 에서 확인할 수 있습니다.</p>
+		
+		<h3>include</h3>
+		<p class="text_basic">서버에 등록하는 경우 공통적으로 사용하는 파일은 inc폴더에 미리 만들어 두었습니다. 서버 등록 시에만 사용할 수 있습니다.</p>
+	</div>
+	<!--[E]서브 내용시작-->
+</div>
+
+<!--[S]하단footer -->
+<footer>
+	<div class="footer_wrap clearfix">
+		<div class="f_link">
+			<ul class="link_wrap clearfix">
+				<li><a href="?menuno=96">이용약관</a></li>
+				<li><a href="?menuno=125">개인정보처리방침</a></li>
+				<li><a href="?menuno=126">사이트맵</a></li>
+			</ul>
+			<div class="f_logo02">
+				<div class="Family_site">
+					<h3><a href="#none">관련사이트</a></h3>
+					<ul style="display: none;">
+						<li><em>관련사이트</em></li>
+						<li><a href="#none" target="_blank" title="새창열림">관련사이트01</a></li>
+						<li><a href="#none" target="_blank" title="새창열림">관련사이트01</a></li>
+						<li><a href="#none" target="_blank" title="새창열림">관련사이트01</a></li>
+						<li><a href="#none" target="_blank" title="새창열림">관련사이트01</a></li>
+						<li><a href="#none" target="_blank" title="새창열림">관련사이트01</a></li>
+						<li><a class="family_close" href="#none">관련사이트 닫기</a></li>
+					</ul>
+				</div>
+			</div>
+			<address>
+			MIT 능력개발원
+			<p>모입조 project</p>
+			</address>
+			<ul class="sns_wrap">
+				<li><a href="https://www.facebook.com/jongheon.kim.5201" target="_blank" title="새창열림">페이지북</a></li>
+				<li><a class="blog" href="https://blog.naver.com/artbank" target="_blank" title="새창열림">블로그</a></li>
+				<li><a class="instagram" href="https://www.instagram.com/artbank1971/?hl=ko" target="_blank" title="새창열림">인스타</a></li>
+				<li><a class="youtube" href="https://www.youtube.com/channel/UCWj8X-qx0TjaR-rN8DdnBQA?view_as=subscriber" target="_blank" title="새창열림">유튜브</a></li>
+				<li><a class="twitter" href="https://twitter.com/explore" target="_blank" title="새창열림">트위터</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!--[E]하단footer -->
+<script src="./js/common.js"></script><!--전체 스크립트-->
+</body>
+</html>
+
